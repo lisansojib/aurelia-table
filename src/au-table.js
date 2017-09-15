@@ -14,10 +14,10 @@ export class AureliaTableCustomAttribute {
 
   @bindable({defaultBindingMode: bindingMode.twoWay}) api;
 
-  isAttached = false;
+  @bindable({defaultBindingMode: bindingMode.twoWay}) sortKey;
+  @bindable({defaultBindingMode: bindingMode.twoWay})sortOrder;
 
-  sortKey;
-  sortOrder;
+  isAttached = false;  
   sortChangedListeners = [];
   beforePagination = [];
 
