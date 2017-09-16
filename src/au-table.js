@@ -16,6 +16,7 @@ export class AureliaTableCustomAttribute {
 
   @bindable({defaultBindingMode: bindingMode.twoWay}) sortKey;
   @bindable({defaultBindingMode: bindingMode.twoWay})sortOrder;
+  @bindable({defaultBindingMode: bindingMode.twoWay})customSort;
 
   isAttached = false;  
   sortChangedListeners = [];
